@@ -43,7 +43,7 @@ USER appuser
 COPY . .
 
 # Expose the port that the application listens on.
-EXPOSE 5000
+EXPOSE 3434
 
 # Run the application.
-CMD flask --app devops run
+CMD flask --app devops --port 3434 run
